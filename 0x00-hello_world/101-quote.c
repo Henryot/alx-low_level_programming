@@ -1,8 +1,9 @@
 #include <unistd.h>
 
 /**
- * we are the bomb
- * lets fo this
+ * main - Entry point
+ *
+ * Return: Always 1 (Error)
  */
 int main(void)
 {
