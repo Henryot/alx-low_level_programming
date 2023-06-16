@@ -1,20 +1,30 @@
-#include <stdio.h>
-#include <time.h>
 #include <stdlib.h>
+#include <time.h>
+#include <stdio.h> // We need this header to use printf
 
-int main() {
-    int n;
-    srand(time(0));
-    n = rand() - RAND_MAX/2;
-    
-    if (n > 0){
-        printf("the number is positive %d\n", n);
-    }
-    else if (n == 0){
-        printf("the number is zero %d\n", n);
-    }
-    else {
-        printf("the number is negative %d\n", n);
-    }
-    return 0;
+int main(void)
+{
+	int n;
+
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+
+	// Check if the number is positive
+	if (n > 0)
+	{
+		printf("%d is positive\n", n);
+	}
+	// Check if the number is zero
+	else if (n == 0)
+	{
+		printf("%d is zero\n", n);
+	}
+	// If the number is not positive or zero, it must be negative
+	else
+	{
+		printf("%d is negative\n", n);
+	}
+
+	return (0);
 }
+
