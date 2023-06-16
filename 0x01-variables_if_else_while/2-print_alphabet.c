@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- *
+ *dnsdbnds
  * main is the gate
  * return is theend
  */
@@ -12,7 +12,6 @@ int main(void)
 
 	for (letter = 'a'; letter <= 'z'; letter++)
 	{
-	
 		putchar(letter);
 	}
 
