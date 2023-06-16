@@ -2,7 +2,7 @@
 
 /**
  * main - is the gate
- * return - value is always 0
+ * return - the return value is always 0
  */
 
 int main(void)
