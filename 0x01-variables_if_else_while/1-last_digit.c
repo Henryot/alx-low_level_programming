@@ -31,7 +31,5 @@ int main(void)
 	{
 		printf("is less than 6 and not 0\n");
 	}
-	
-	return 0;
+	return (0);
 }
-
