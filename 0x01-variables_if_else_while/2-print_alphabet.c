@@ -6,7 +6,8 @@
  * return is theend
  */
 
-int main(){
+int main(void)
+{
 	int letter;
 
 	for (letter = 'a'; letter <= 'z'; letter ++){
