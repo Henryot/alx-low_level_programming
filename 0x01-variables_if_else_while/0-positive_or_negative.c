@@ -2,6 +2,15 @@
 #include <time.h>
 #include <stdio.h> /* We need this header to use printf */
 
+/**
+ * main - Entry point of the program
+ *
+ * This program assigns a random number to the variable n each time it is executed.
+ * It then prints whether the number stored in n is positive, negative, or zero.
+ *
+ * Return: Always 0 (indicating success)
+ */
+
 int main(void)
 {
 	int n;
