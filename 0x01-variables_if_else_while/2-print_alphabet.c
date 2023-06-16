@@ -1,9 +1,8 @@
 #include <stdio.h>
 
 /**
- *dnsdbnds
- * main is the gate
- * return is theend
+ * main - is the gate
+ * return: is always 0
  */
 
 int main(void)
