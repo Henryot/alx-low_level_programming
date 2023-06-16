@@ -1,14 +1,14 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/**jkdfnkd
+/** jkdfnkd
  * kjdnsksm
  * jdsnnd
  */
 int main(void)
 {
     int n;
-    int lastDigit; 
+    int lastDigit; /* declarations and stuffs */
 
     srand(time(0));
     n = rand() - RAND_MAX / 2;
