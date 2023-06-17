@@ -22,7 +22,6 @@ int main(void)
 
 		else
 		{
-		
 			 putchar(digit + 'a' - 10);
 		}
 
