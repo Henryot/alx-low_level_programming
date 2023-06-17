@@ -12,7 +12,7 @@
 int main(void)
 {
 	int digit;
-	
+
 	for (digit = 0; digit < 16; digit++)
 	{
 		if (digit < 10)
@@ -20,7 +20,11 @@ int main(void)
 			putchar(digit + '0');
 		}
 
-		else putchar(digit + 'a' - 10);
+		else
+		{
+		
+			 putchar(digit + 'a' - 10);
+		}
 
 	}
 
