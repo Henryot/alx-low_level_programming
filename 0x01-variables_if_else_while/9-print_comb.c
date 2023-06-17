@@ -12,22 +12,22 @@
 
 int main(void)
 {
-	int digit1, digit2;
-	
-	for (digit1 = 0; digit1 <= 9; digit1++)
+	int first_digit, second_digit;
+        
+	for (first_digit = '0'; first_digit <= '9'; first_digit++)
 	{
-		for (digit2 = digit1; digit2 <= 9; digit2++)
+		for (second_digit = first_digit; second_digit <= '9'; second_digit++)
 		{
-			putchar(digit1 + '0');
-			putchar(digit2 + '0');
-			
-			if (digit1 != 9 || digit2 != 9)
+			putchar(first_digit);
+			putchar(second_digit);
+
+			if (first_digit != '9' || second_digit != '9')
 			{
 				putchar(',');
 				putchar(' ');
 			}
 		}
 	}
-	putchar('\n');
-	return (0);
+		putchar('\n');
+		return (0);
 }
