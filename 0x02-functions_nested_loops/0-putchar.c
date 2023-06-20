@@ -1,18 +1,11 @@
 #include <stdio.h>
 #include <unistd.h>
-
+#include "main.h"
 /**
  * main - Entry point of the program
  *
  * Return: Always 0 (Success)
  */
-int _putchar(char c);
-
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-
-}
 
 int main(void)
 {
@@ -24,6 +17,7 @@ int main(void)
 	_putchar('h');
 	_putchar('a');
 	_putchar('r');
+	_putchar('\n');
 
 	return (0);
 }
