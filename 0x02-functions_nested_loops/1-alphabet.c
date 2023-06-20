@@ -1,23 +1,15 @@
 #include <unistd.h>
 #include <stdio.h>
-
-void print_alphabet(void);
+#include "main.h"
 
 void print_alphabet(void)
 {
-	char letter;
-	for (letter = 'a'; letter <= 'z'; letter++)
+	char c;
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		write(1, &letter, 1);
+		_putchar(c);
 
 	}
-	write(1, "\n", 1);
+	_putchar('\n');
 }
 
-
-int main()
-{
-	print_alphabet();
-
-	return (0);
-}
