@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * main - Entry point of the program
+ * print_alphabet - make the alphabet
  *
  * Return: Always 0 (Success)
  */
