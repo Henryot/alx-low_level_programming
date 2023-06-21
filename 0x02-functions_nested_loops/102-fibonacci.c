@@ -22,7 +22,7 @@ void print_fibonacci(int n)
 
 		if (i != n)
 		{
-		printf(", ")
+		printf(", ");
 		}
 
 		first = second;
