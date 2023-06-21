@@ -3,6 +3,7 @@
  * print_times_tables - printing multiplication table
  * @n: this was used in the code
  * Return: retun is always 0
+ */
 
 void print_times_table(int n)
 {
