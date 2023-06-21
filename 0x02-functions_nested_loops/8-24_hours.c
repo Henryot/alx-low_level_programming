@@ -13,7 +13,7 @@ void jack_bauer(void)
 	{
 		for (minute = 0; minute < 60; minute++)
 		{
-	    		int hour_tens = hour / 10;
+			int hour_tens = hour / 10;
 			int hour_ones = hour % 10;
 			int minute_tens = minute / 10;
 			int minute_ones = minute % 10;
