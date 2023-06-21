@@ -3,6 +3,7 @@
 
 /**
  * print_to_98 - a funtion that prints 0 t0 98
+ * @n: the parameter used for the count
  * Return: return is 0
  */
 
