@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_times_tables - printing multiplication table
+ * print_times_table - printing multiplication table
  * @n: this was used in the code
  * Return: retun is always 0
  */
@@ -9,7 +9,7 @@ void print_times_table(int n)
 {
 	int num, mult, prod;
 
-	if (n >= 0 && n <=15)
+	if (n >= 0 && n <= 15)
 	{
 	for (num = 0; num <= n; num++)
 	{
