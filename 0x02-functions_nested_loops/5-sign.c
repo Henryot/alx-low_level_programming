@@ -2,7 +2,7 @@
 
 /**
  * print_sign - prints sign based on input
- * n: is the argument
+ * @n: is the argument
  * Return: is 1 if its + and - if its -1 else return 0
  */
 
@@ -17,7 +17,7 @@ int print_sign(int n)
 	else if (n < 0)
 	{
 		_putchar('-');
-		return(-1);
+		return (-1);
 	}
 	else
 	{
