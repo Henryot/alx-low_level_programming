@@ -17,14 +17,16 @@ void times_table(void)
 			int tens_digit = multiplication_value / 10;
 			int ones_digit = multiplication_value % 10;
 
-			_putchar('0' + tens_digit);
-			_putchar('0' + ones_digit);
-
-			if (column != 9)
+			if (column != 0)
 			{
 				_putchar(',');
 				_putchar(' ');
 			}
+			if (multiplication_value < 10)
+				_putchar(' ');
+			else
+				_putchar('0' + tens_digit);
+			_putchar('0' + ones_digit);
 		}
 	
 	_putchar('\n');
