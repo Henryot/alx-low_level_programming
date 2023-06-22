@@ -8,10 +8,10 @@
 
 void print_fibonacci(int n)
 {
-	unsigned long int first = 1;
-	unsigned long int second = 2;
-	unsigned long int next;
-	unsigned long int i;
+	unsigned long first = 1;
+	unsigned long second = 2;
+	unsigned long next;
+	unsigned long i;
 
 	printf("%lu, %lu, ", first, second);
 
