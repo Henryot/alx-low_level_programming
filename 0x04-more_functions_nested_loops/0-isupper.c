@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - this function prints uppercase
+ * _isupper - this function prints uppercase
  * @c: c holds the parameter
  * Return: it always 0
  */
