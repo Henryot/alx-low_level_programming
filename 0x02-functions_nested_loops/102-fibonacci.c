@@ -13,12 +13,12 @@ void print_fibonacci(int n)
 	int next;
 	int i;
 
-	printf("%lu, %lu, ", first, second);
+	printf("%d, %d, ", first, second);
 
 	for (i = 3; i <= n; i++)
 	{
 		next = first + second;
-		printf("%lu", next);
+		printf("%d", next);
 
 		if (i != n)
 		{
