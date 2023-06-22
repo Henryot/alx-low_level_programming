@@ -8,19 +8,19 @@
 
 void print_fibonacci(int n)
 {
-	unsigned long first = 1;
-	unsigned long second = 2;
-	unsigned long next;
+	int first = 1;
+	int second = 2;
+	int next;
 	int i;
 
 	printf("%lu, %lu, ", first, second);
 
-	for (i = 3; i <= (unsigned long)n; i++)
+	for (i = 3; i <= n; i++)
 	{
 		next = first + second;
 		printf("%lu", next);
 
-		if (i != (unsigned long)n)
+		if (i != n)
 		{
 		printf(", ");
 		}
