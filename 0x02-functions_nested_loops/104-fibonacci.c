@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Prints the sum of even-valued Fibonacci sequence
+ * print_fibonacci - Prints the sum of even-valued Fibonacci sequence
  *        terms not exceeding 4000000.
  *
  * Return: Always 0.
@@ -11,8 +11,11 @@
 void print_fibonacci(void)
 {
 	int count;
+
 	unsigned int num1, num2, next;
+
 	num1 = 1;
+
 	num2 = 2;
 
 	printf("%u, %u", num1, num2);
@@ -32,6 +35,6 @@ void print_fibonacci(void)
 int main(void)
 {
 	print_fibonacci();
-	return 0;
+	return (0);
 }
 
