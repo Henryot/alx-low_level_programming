@@ -15,7 +15,7 @@ void print_fibonacci(void)
 	num1 = 1;
 	num2 = 2;
 
-	printf("%u, %u", num1, num2);  // Print the first two Fibonacci numbers
+	printf("%u, %u", num1, num2);
 
 	for (count = 3; count <= 98; count++)
 	{
