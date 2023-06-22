@@ -11,16 +11,16 @@ void print_fibonacci(int n)
 	unsigned long first = 1;
 	unsigned long second = 2;
 	unsigned long next;
-	unsigned long i;
+	int i;
 
 	printf("%lu, %lu, ", first, second);
 
-	for (i = 3; i <= n; i++)
+	for (i = 3; i <= (unsigned long)n; i++)
 	{
 		next = first + second;
 		printf("%lu", next);
 
-		if (i != n)
+		if (i != (unsigned long)n)
 		{
 		printf(", ");
 		}
