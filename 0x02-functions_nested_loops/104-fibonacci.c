@@ -6,24 +6,32 @@
  *
  * Return: Always 0.
  */
+
+
+void print_fibonacci(void)
+{
+	int count;
+	unsigned int num1, num2, next;
+	num1 = 1;
+	num2 = 2;
+
+	printf("%u, %u", num1, num2);  // Print the first two Fibonacci numbers
+
+	for (count = 3; count <= 98; count++)
+	{
+		next = num1 + num2;
+		printf(", %u", next);
+
+		num1 = num2;
+		num2 = next;
+	}
+
+	printf("\n");
+}
+
 int main(void)
 {
-	unsigned long fib1 = 0, fib2 = 1, fibsum;
-	float tot_sum;
-
-	while (1)
-	{
-		fibsum = fib1 + fib2;
-		if (fibsum > 4000000)
-			break;
-
-		if ((fibsum % 2) == 0)
-			tot_sum += fibsum;
-
-		fib1 = fib2;
-		fib2 = fibsum;
-	}
-	printf("%.0f\n", tot_sum);
-
-	return (0);
+	print_fibonacci();
+	return 0;
 }
+
