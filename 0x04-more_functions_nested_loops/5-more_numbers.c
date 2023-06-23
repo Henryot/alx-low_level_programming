@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_most - printing numbers and all
+ * more_numbers - printing numbers and all
  * Return: retun is always 0
  */
 #include "main.h"
