@@ -31,7 +31,11 @@ unsigned long largest_prime_factor(unsigned long n)
 
 	return (i);
 }
-
+/**
+ * main - Entry point of the program
+ *
+ * Return: Always 0
+ */
 int main(void)
 {
 	unsigned long number = 612852475143;
