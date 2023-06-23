@@ -3,7 +3,7 @@
 
 /**
  * _isdigit(int c)
- * @c: this 
+ * @c: this
  * Return: return is always 0
  */
 int _isdigit(int c)
@@ -11,8 +11,8 @@ int _isdigit(int c)
 	if (c >= '0' && c <= '9')
 	{
 		return (1);
-	} 
-	else 
+	}
+	else
 	{
 		return (0);
 	}
