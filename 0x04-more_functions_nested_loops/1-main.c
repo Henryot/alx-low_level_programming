@@ -13,7 +13,7 @@ int main(void)
 	c = '0';
 
 	printf("%c: %d\n", c, _isdigit(c));
-	
+
 	c = 'a';
 
 	printf("%c: %d\n", c, _isdigit(c));
