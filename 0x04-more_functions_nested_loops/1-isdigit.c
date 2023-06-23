@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * _isdigit(int c)
+ * _isdigit - it is going to print digits
  * @c: this
  * Return: return is always 0
  */
