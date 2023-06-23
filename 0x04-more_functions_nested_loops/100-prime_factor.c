@@ -26,10 +26,10 @@ unsigned long largest_prime_factor(unsigned long n)
 
 	if (n > 2)
 	{
-		return n;
+		return (n);
 	}
 
-	return i;
+	return (i);
 }
 
 int main(void)
@@ -39,5 +39,5 @@ int main(void)
 
 	printf("%lu\n", largest_factor);
 
-	return 0;
+	return (0);
 }
