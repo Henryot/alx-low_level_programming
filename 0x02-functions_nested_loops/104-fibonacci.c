@@ -9,33 +9,25 @@
  */
 
 
-void print_fibonacci(void)
+int main (void)
 {
-	int count;
+	unsigned long int num1 = 1;
+	unsigned long int num2 = 2;
+	unsigned long int i;
+	unsigned long int next;
+	unsigned long int sum = 0;
 
-	unsigned int num1, num2, next;
-
-	num1 = 1;
-
-	num2 = 2;
-
-	printf("%u, %u", num1, num2);
-
-	for (count = 3; count <= 98; count++)
+	printf("%lu, ", num1);
+	printf("%lu, ", num2);
+    
+	for (i = 3; i <= 98; i++)
 	{
 		next = num1 + num2;
-		printf(", %u", next);
-
+		printf("%lu, ", next);
+        
 		num1 = num2;
 		num2 = next;
 	}
-
 	printf("\n");
+	return 0;
 }
-
-int main(void)
-{
-	print_fibonacci();
-	return (0);
-}
-
