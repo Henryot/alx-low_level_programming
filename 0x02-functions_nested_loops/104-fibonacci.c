@@ -15,7 +15,6 @@ int main (void)
 	unsigned long int num2 = 2;
 	unsigned long int i;
 	unsigned long int next;
-	unsigned long int sum = 0;
 
 	printf("%lu, ", num1);
 	printf("%lu, ", num2);
