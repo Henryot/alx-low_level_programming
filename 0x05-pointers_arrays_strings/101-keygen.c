@@ -13,20 +13,9 @@ int main(void)
 
     for (i = 0; i < PASSWORD_LENGTH; i++)
     {
-        int random_char = rand() % 62;
+        int random_char = rand() % 94 + 33;
 
-        if (random_char < 26)
-        {
-            password[i] = 'a' + random_char;
-        }
-        else if (random_char < 52)
-        {
-            password[i] = 'A' + (random_char - 26);
-        }
-        else
-        {
-            password[i] = '0' + (random_char - 52);
-        }
+        password[i] = random_char;
     }
 
     password[PASSWORD_LENGTH] = '\0';
