@@ -6,11 +6,11 @@
 
 char *generate_password()
 {
-    char *password = malloc(PASSWORD_LENGTH + 1); // Allocate memory for password
+    char *password = malloc(PASSWORD_LENGTH + 1);
     const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     int i, sum = 0;
 
-    srand(time(NULL)); // Seed the random number generator
+    srand(time(NULL));
 
     for (i = 0; i < PASSWORD_LENGTH - 1; i++)
     {
@@ -19,8 +19,8 @@ char *generate_password()
         sum += charset[index];
     }
 
-    password[PASSWORD_LENGTH - 1] = (sum % 10) + '0'; // Last character should be a digit
-    password[PASSWORD_LENGTH] = '\0'; // Add null terminator
+    password[PASSWORD_LENGTH - 1] = (sum % 10) + '0';
+    password[PASSWORD_LENGTH] = '\0';
 
     return password;
 }
@@ -31,7 +31,7 @@ int main()
 
     printf("%s\n", password);
 
-    free(password); // Free allocated memory
+    free(password);
 
     return 0;
 }
