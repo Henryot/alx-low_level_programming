@@ -3,7 +3,7 @@
 
 /**
  * _strlen - prints length of strong
- * @s: s is the 
+ * @s: s is the
  * Return: it returns length
  */
 
@@ -18,5 +18,5 @@ int _strlen(char *s)
 	s++;
 	}
 
-	return length;
+	return (length);
 }
