@@ -13,23 +13,23 @@ int main(void)
 
     for (i = 0; i < PASSWORD_LENGTH; i++)
     {
-        int random_char = rand() % 62; // Generating a random number between 0 and 61
+        int random_char = rand() % 62;
 
-        if (random_char < 26) // Random character is between 'a' and 'z'
+        if (random_char < 26)
         {
             password[i] = 'a' + random_char;
         }
-        else if (random_char < 52) // Random character is between 'A' and 'Z'
+        else if (random_char < 52)
         {
             password[i] = 'A' + (random_char - 26);
         }
-        else // Random character is between '0' and '9'
+        else
         {
             password[i] = '0' + (random_char - 52);
         }
     }
 
-    password[PASSWORD_LENGTH] = '\0'; // Null-terminate the password string
+    password[PASSWORD_LENGTH] = '\0';
 
     printf("%s\n", password);
 
