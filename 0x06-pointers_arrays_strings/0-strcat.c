@@ -2,8 +2,8 @@
 
 /**
  * _strcat - this is the funtion for cocatenating strings
- * @*dest: first string
- * @*src: second string
+ * @dest: first string
+ * @src: second string
  * Return: it will return dest;
  */
 
