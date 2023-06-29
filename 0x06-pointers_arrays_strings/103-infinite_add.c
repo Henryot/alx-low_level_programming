@@ -14,54 +14,40 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 	int len1 = 0, len2 = 0, sum = 0, carry = 0, i = 0;
 
-	/* Calculate the lengths of n1 and n2 */
 	while (n1[len1] != '\0')
 		len1++;
 	while (n2[len2] != '\0')
 		len2++;
-
-	/* Check if the result can be stored in r */
-	if (len1 >= size_r || len2 >= size_r)
+	if (len1 >= size_r - 1 || len2 >= size_r - 1)
 		return (0);
-
 	len1--;
 	len2--;
-
-	/* Perform addition digit by digit */
 	while (len1 >= 0 || len2 >= 0)
 	{
 		sum = carry;
-
 		if (len1 >= 0)
 			sum += (n1[len1] - '0');
 		if (len2 >= 0)
 			sum += (n2[len2] - '0');
-
 		carry = sum / 10;
 		sum %= 10;
-
 		r[i] = sum + '0';
-
 		i++;
 		len1--;
 		len2--;
 	}
-
 	if (carry)
 	{
-		/* Check if there is enough space for the carry */
-		if (i >= size_r)
+		if (i >= size_r - 1)
 			return (0);
 
 		r[i] = carry + '0';
 		i++;
 	}
 
-	/* Reverse the result in r */
-	reverse_string(r, i);
-
 	r[i] = '\0';
 
+	reverse_string(r, i);
 	return (r);
 }
 
@@ -86,4 +72,3 @@ void reverse_string(char *str, int len)
 		end--;
 	}
 }
-
