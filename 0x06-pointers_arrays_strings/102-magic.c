@@ -1,8 +1,4 @@
 #include <stdio.h>
-/**
- * main - This program demonstrates a single statement solution.
- * Return: return is always 0
- */
 
 int main(void)
 {
