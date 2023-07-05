@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * _print_rev_recurssion - check the code
+ * _print_rev_recursion - check the code
  *@s: the character
  *
  * Return: Always 0.
