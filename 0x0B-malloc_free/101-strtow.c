@@ -1,4 +1,6 @@
 #include <stdlib.h>
+#include <string.h>
+#include "main.h"
 
 /**
  * count_words - Counts the number of words in a string
@@ -9,11 +11,13 @@
 int count_words(char *str)
 {
 	int count = 0;
-	int i;
+	int i, len;
 
-	for (i = 0; str[i] != '\0'; i++)
+	len = strlen(str);
+
+	for (i = 0; i < len; i++)
 	{
-		if (str[i] != ' ' && (str[i + 1] == ' ' || str[i + 1] == '\0'))
+		if (str[i] != ' ' && (i == 0 || str[i - 1] == ' '))
 			count++;
 	}
 
@@ -32,13 +36,13 @@ char **strtow(char *str)
 	int num_words, word_len, i, j, k;
 
 	if (str == NULL || str[0] == '\0')
-		return (NULL);
+		return NULL;
 
 	num_words = count_words(str);
 	words = malloc(sizeof(char *) * (num_words + 1));
 
 	if (words == NULL)
-		return (NULL);
+		return NULL;
 
 	i = 0;
 	k = 0;
@@ -61,7 +65,7 @@ char **strtow(char *str)
 				for (j = 0; j < k; j++)
 					free(words[j]);
 				free(words);
-				return (NULL);
+				return NULL;
 			}
 
 			for (j = 0; j < word_len; j++, i++)
@@ -76,5 +80,5 @@ char **strtow(char *str)
 	}
 
 	words[k] = NULL;
-	return (words);
+	return words;
 }
