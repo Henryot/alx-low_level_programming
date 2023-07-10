@@ -43,22 +43,21 @@ int count_words(char *str)
  */
 char **strtow(char *str)
 {
-	int num_words;
 	char **words;
 	char *token;
 	char *copy;
-	int i, j;
+	int i, j, num_words;
 
 	if (str == NULL || *str == '\0')
 		return (NULL);
 	num_words = count_words(str);
 	if (num_words == 0)
 		return (NULL);
-	copy = (char *)malloc(strlen(str) + 1);
+	copy = malloc(strlen(str) + 1);
 	if (copy == NULL)
 		return (NULL);
 	strcpy(copy, str);
-	words = (char **)malloc(sizeof(char *) * (num_words + 1));
+	words = malloc(sizeof(char *) * (num_words + 1));
 	if (words == NULL)
 	{
 		free(copy);
@@ -68,7 +67,7 @@ char **strtow(char *str)
 	i = 0;
 	while (token != NULL)
 	{
-		words[i] = (char *)malloc(strlen(token) + 1);
+		words[i] = malloc(strlen(token) + 1);
 		if (words[i] == NULL)
 		{
 			for (j = 0; j < i; j++)
