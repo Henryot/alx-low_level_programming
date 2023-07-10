@@ -15,7 +15,7 @@ char *argstostr(int ac, char **av)
 	int index = 0;
 
 	if (ac == 0 || av == NULL)
-		return NULL;
+		return (NULL);
 
 	/* Calculate the total length of the arguments */
 	for (i = 0; i < ac; i++)
@@ -28,7 +28,7 @@ char *argstostr(int ac, char **av)
 	/* Allocate memory for the concatenated string */
 	concatenated = malloc(sizeof(char) * (totalLength + 1));
 	if (concatenated == NULL)
-		return NULL;
+		return (NULL);
 
 	/* Copy the arguments to the concatenated string */
 	for (i = 0; i < ac; i++)
@@ -44,5 +44,5 @@ char *argstostr(int ac, char **av)
 
 	concatenated[index] = '\0'; /* Add null terminator at the end */
 
-	return concatenated;
+	return (concatenated);
 }
