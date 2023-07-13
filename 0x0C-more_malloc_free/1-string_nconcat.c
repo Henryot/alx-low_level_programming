@@ -19,12 +19,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	/* Check if s1 is NULL, treat it as an empty string */
 	if (s1 == NULL)
 		s1 = "";
-
-	/* Check if s2 is NULL, treat it as an empty string */
 	if (s2 == NULL)
 		s2 = "";
 
-	/* Calculate the lengths of s1 and s2 */
 	while (s1[s1_len] != '\0')
 		s1_len++;
 	while (s2[s2_len] != '\0')
