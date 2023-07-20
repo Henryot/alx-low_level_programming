@@ -2,36 +2,39 @@
 #include <stdlib.h>
 
 /**
- * main - Prints the opcodes of its own main function
- * @argc: The argument count
- * @argv: The argument vector
+ * main - Entry point
+ * @argc: Argument count
+ * @argv: Argument vector
  *
- * Return: Always 0
+ * Return: 0 on success, 1 if the number of arguments is incorrect,
+ *         or 2 if the number of bytes is negative.
  */
 int main(int argc, char **argv)
 {
-	int i, bytes;
+	int i, num_bytes;
 
 	if (argc != 2)
 	{
 		printf("Error\n");
-		exit(1);
+		return 1;
 	}
 
-	bytes = atoi(argv[1]);
-
-	if (bytes < 0)
+	num_bytes = atoi(argv[1]);
+	if (num_bytes < 0)
 	{
 		printf("Error\n");
-		exit(2);
+		return 2;
 	}
 
 	unsigned char *main_ptr = (unsigned char *)main;
 
-	for (i = 0; i < bytes; i++)
-		printf("%02x ", main_ptr[i]);
-
+	for (i = 0; i < num_bytes; i++)
+	{
+		printf("%02x", main_ptr[i]);
+		if (i < num_bytes - 1)
+			printf(" ");
+	}
 	printf("\n");
 
-	return (0);
+	return 0;
 }
