@@ -10,6 +10,5 @@ int int_index(int *array, int size, int (*cmp)(int));
 int is_98(int elem);
 int is_strictly_positive(int elem);
 int abs_is_98(int elem);
-int main(int argc, char *argv[]);
 
 #endif /* FUNCTION_POINTERS_H */
