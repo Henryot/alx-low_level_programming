@@ -3,7 +3,13 @@
 
 #include <stddef.h>
 
-/* Struct for a singly linked list of integers */
+/**
+ * struct listint_s - singly linked list
+ * @n: integer
+ * @next: points to the next node
+ *
+ * Description: singly linked list node structure
+ */
 typedef struct listint_s
 {
 	int n;
@@ -25,4 +31,3 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index);
 listint_t *reverse_listint(listint_t **head);
 
 #endif /* LISTS_H */
-
