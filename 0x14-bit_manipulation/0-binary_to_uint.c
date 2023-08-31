@@ -10,11 +10,14 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
+	unsigned int dec_val;
+	int i;
+
 	if (!b)
 		return (0);
 
-	unsigned int dec_val = 0;
-	int i = 0;
+	dec_val = 0;
+	i = 0;
 
 	while (b[i])
 	{
